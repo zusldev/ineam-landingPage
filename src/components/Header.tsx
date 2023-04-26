@@ -1,4 +1,4 @@
-import {useState, useRef, useEffect} from "react";
+import {useEffect, useRef, useState} from "react";
 import {RiCloseLine, RiMenu3Fill} from "react-icons/ri";
 
 const Header = () => {
@@ -60,12 +60,13 @@ const Header = () => {
         <a href="#joinUs" className="">
           Asociarme
         </a>
-        <a href="#contact" className="">
-          Contacto
-        </a>
         <a href="#objectives" className="">
           Nuestros Objetivos
         </a>
+        <a href="#contact" className="">
+          Contacto
+        </a>
+
       </div>
       <button
         onClick={() => setShowMenu(!showMenu)}
