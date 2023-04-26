@@ -2,6 +2,7 @@ import {useState} from 'react';
 import {RiCheckboxBlankCircleFill} from 'react-icons/ri';
 import styles from '@/components/Aeronautica.module.css';
 
+// @ts-ignore
 const StyleBlock = ({text}) => {
   return (
     <span

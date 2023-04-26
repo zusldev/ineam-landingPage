@@ -7,7 +7,8 @@ const Header = () => {
 
 // handle event when click outside menu to hide it
   useEffect(() => {
-    const handleClickOutsideMenu = (event): void => {
+    const handleClickOutsideMenu = (event: any): void => {
+      // @ts-ignore
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setShowMenu(false);
       }
