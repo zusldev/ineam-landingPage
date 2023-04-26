@@ -2,9 +2,8 @@ import {useState} from 'react';
 import {RiCheckboxBlankCircleFill} from 'react-icons/ri';
 import styles from '@/components/Aeronautica.module.css';
 
+// @ts-ignore
 const StyleBlock = ({text}) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <span
       className="text-sky-600 py-2 px-6 border-8 border-sky-600 relative inline-block group"

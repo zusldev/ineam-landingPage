@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import IneamLogo from "../assets/images/Ineam-logo.png";
+import ineamLogo from "../assets/images/ineamLogo.png";
 import StyleBlock from "@/components/RiFill";
 
 const Hero = () => {
@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="md:col-span-3 flex items-center justify-center relative">
         {/* Content image */}
         <div>
-          <Image src={IneamLogo} alt={'Logo ineam'}
+          <Image src={ineamLogo} alt={'Logo ineam'}
                  className={"w-[250px] h-[250px] md:w-[550px] md:h-[550px] object-cover xl:-mt-28 hover:scale-110 transition-all duration-500 ease-in-out"}
                  quality={100}
                  priority={true}
