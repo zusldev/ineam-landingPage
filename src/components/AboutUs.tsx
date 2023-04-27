@@ -119,4 +119,3 @@ export default function AboutUs(): JSX.Element {
     </motion.section>
   );
 }
-

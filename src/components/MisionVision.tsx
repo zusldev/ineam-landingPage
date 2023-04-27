@@ -94,6 +94,3 @@ export default function MissionVisionValues(): JSX.Element {
     </section>
   );
 }
-
-
-
