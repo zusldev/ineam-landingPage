@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import IneamLogo from "../assets/images/Ineam-logo.png";
+import ineamLogo from "../assets/images/ineamLogo.png";
 import StyleBlock from "@/components/RiFill";
 
 const Hero = () => {
@@ -9,10 +9,12 @@ const Hero = () => {
       {/* Information */}
       <div className="md:col-span-5 flex items-center justify-center p-8 xl:p-16">
         <div className="flex flex-col gap-8">
-          <h1 className="text-5xl xl:text-7xl font-bold xl:leading-[7.5rem]">
+          <h1 className="text-5xl xl:text-6xl font-bold xl:leading-[7.5rem]">
             Ingenieros en electrónica
             <StyleBlock text={'Aeronautica'}/>
+            <span className='flex'>
             de México, AC
+            </span>
           </h1>
           <p className="text-gray-500 text-2xl leading-[2.5rem]">
             "La ingeniería electrónica al servicio de la seguridad aérea"
@@ -20,7 +22,7 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center gap-4">
             <button
               className="w-full xl:w-auto bg-blue-800 text-white py-4 px-8 rounded-xl text-xl hover:bg-sky-600 transition-all duration-300 ease-in">
-              Contáctanos
+              <a href="#contact">Contáctanos</a>
             </button>
           </div>
         </div>
@@ -29,7 +31,7 @@ const Hero = () => {
       <div className="md:col-span-3 flex items-center justify-center relative">
         {/* Content image */}
         <div>
-          <Image src={IneamLogo} alt={'Logo ineam'}
+          <Image src={ineamLogo} alt={'Logo ineam'}
                  className={"w-[250px] h-[250px] md:w-[550px] md:h-[550px] object-cover xl:-mt-28 hover:scale-110 transition-all duration-500 ease-in-out"}
                  quality={100}
                  priority={true}
