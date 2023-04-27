@@ -1,11 +1,12 @@
-import {useEffect, useRef, useState} from "react";
-import {RiCloseLine, RiMenu3Fill} from "react-icons/ri";
+import { useEffect, useRef, useState } from "react";
+import { RiCloseLine, RiMenu3Fill } from "react-icons/ri";
+import styles from "./Header.module.css";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
 
-// handle event when click outside menu to hide it
+  // handle event when click outside menu to hide it
   useEffect(() => {
     const handleClickOutsideMenu = (event: any): void => {
       // @ts-ignore
@@ -47,23 +48,22 @@ const Header = () => {
       </div>
       <div
         ref={menuRef}
-        className={`fixed w-[80%] bg-white md:w-[40%] xl:w-full h-full ${
-          showMenu ? "left-0" : "-left-full"
-        } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}
+        className={`fixed w-[80%] bg-white md:w-[40%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"
+          } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}
       >
-        <a href="#home" className="">
+        <a href="#home" className={styles.item}>
           Inicio
         </a>
-        <a href="#aboutUs" className="">
+        <a href="#aboutUs" className={styles.item}>
           Sobre Nosotros
         </a>
-        <a href="#joinUs" className="">
+        <a href="#joinUs" className={styles.item}>
           Asociarme
         </a>
-        <a href="#objectives" className="">
+        <a href="#objectives" className={styles.item}>
           Nuestros Objetivos
         </a>
-        <a href="#contact" className="">
+        <a href="#contact" className={styles.item}>
           Contacto
         </a>
 
@@ -72,7 +72,7 @@ const Header = () => {
         onClick={() => setShowMenu(!showMenu)}
         className="xl:hidden text-2xl p-2 transition-all duration-500 hover:text-blue-500"
       >
-        {showMenu ? <RiCloseLine/> : <RiMenu3Fill/>}
+        {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
       </button>
     </header>
   );
