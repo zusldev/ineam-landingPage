@@ -50,22 +50,22 @@ const Header = () => {
       <div
         ref={menuRef}
         className={`fixed w-[80%] md:w-[40%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"
-          } top-0 xl:static flex-1 flex flex-col bg-white dark:bg-black xl:flex-row items-center justify-center gap-10 transition-all duration-200 z-50`}
+          } top-0 xl:static flex-1 flex flex-col bg-white dark:bg-black xl:flex-row items-center justify-center gap-10 transition- duration-200 z-50`}
       >
 
-        <a href="#home" className={styles.item}>
+        <a href="#home" className="hover:bg-gray-100 p-2 rounded-md dark:hover:bg-gray-800">
           Inicio
         </a>
-        <a href="#aboutUs" className={styles.item}>
+        <a href="#aboutUs" className="hover:bg-gray-100 p-2 rounded-md dark:hover:bg-gray-800">
           Sobre Nosotros
         </a>
-        <a href="#joinUs" className={styles.item}>
+        <a href="#joinUs" className="hover:bg-gray-100 p-2 rounded-md dark:hover:bg-gray-800">
           Asociarme
         </a>
-        <a href="#objectives" className={styles.item}>
+        <a href="#objectives" className="hover:bg-gray-100 p-2 rounded-md dark:hover:bg-gray-800">
           Nuestros Objetivos
         </a>
-        <a href="#contact" className={styles.item}>
+        <a href="#contact" className="hover:bg-gray-100 p-2 rounded-md dark:hover:bg-gray-800">
           Contacto
         </a>
         <ToggleMode />
