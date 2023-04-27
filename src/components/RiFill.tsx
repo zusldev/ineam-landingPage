@@ -24,16 +24,16 @@ const StyleBlock = ({ text }: any) => {
         <span>
 
           <RiCheckboxBlankCircleFill
-            className="text-white text-base absolute -left-5 -top-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
+            className="text-white dark:text-gray-900 text-base absolute -left-5 -top-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
           />
           <RiCheckboxBlankCircleFill
-            className="text-white text-base absolute -right-5 -top-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
+            className="text-white dark:text-gray-900 text-base absolute -right-5 -top-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
           />
           <RiCheckboxBlankCircleFill
-            className="text-white text-base absolute -right-5 -bottom-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
+            className="text-white dark:text-gray-900 text-base absolute -right-5 -bottom-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
           />
           <RiCheckboxBlankCircleFill
-            className="text-white text-base absolute -left-5 -bottom-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
+            className="text-white dark:text-gray-900 text-base absolute -left-5 -bottom-5 p-2 bg-sky-600 rounded-full box-content group-hover:block"
           />
         </span>
       </motion.span>
