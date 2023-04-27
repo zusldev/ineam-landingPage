@@ -64,22 +64,22 @@ const Objectives = () => {
   };
 
   return (
-    <section id='objectives' className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <section id='objectives' className="bg-gray-100 dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto gap-10">
         <h2 className="text-base text-center text-blue-600 font-semibold tracking-wide uppercase">
           Nuestros objetivos
         </h2>
-        <p className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <p className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
           ¿Qué buscamos?
         </p>
-        <div className="grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 gap-10  px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 sm:px-6 lg:px-8">
           {objectivesData.map((objective, index) => (
             <motion.div
               key={index}
               variants={container}
               initial="hidden"
               animate={show ? "show" : "hidden"}
-              className="flex flex-col items-center"
+              className="flex flex-col  items-center"
             >
               <motion.div
                 variants={item}
@@ -89,8 +89,8 @@ const Objectives = () => {
                 <div className="flex items-center justify-center">
                   {objective.icon}
                 </div>
-                <h3 className="mt-4 text-lg font-medium text-gray-900 text-center mb-6">{objective.title}</h3>
-                <p className="mt-4 text-base text-gray-500 lg:text-center">{objective.text}</p>
+                <h3 className="mt-4 text-lg font-medium text-gray-900 text-center mb-6 dark:text-white">{objective.title}</h3>
+                <p className="mt-4 text-base text-gray-500 lg:text-center dark:text-gray-300">{objective.text}</p>
               </motion.div>
             </motion.div>
           ))}

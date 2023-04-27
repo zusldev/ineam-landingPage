@@ -15,10 +15,10 @@ const Hero = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <main className="flex justify-center items-center max-w-7xl mx-auto">
+    <main className="flex justify-center dark:bg-black items-center  mx-auto">
       <section
         id="home"
-        className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-10 md:gap-72 mx-auto py-16 md:py-32"
+        className="grid grid-cols-1 md:grid-cols-2 place-items-center max-w-7xl gap-10 md:gap-72 mx-auto py-16 md:py-32"
       >
         {/* Information */}
         <div className="px-10 py-10 mx-auto">
@@ -28,7 +28,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="flex flex-col gap-8"
           >
-            <h1 className="text-5xl xl:text-6xl font-bold leading-tight md:leading-[7.5rem]">
+            <h1 className="text-5xl text-black dark:text-white xl:text-6xl font-bold leading-tight md:leading-[7.5rem]">
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -46,13 +46,13 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-gray-500 text-2xl leading-tight md:leading-[2.5rem]"
+              className="text-gray-500 dark:text-gray-300 text-2xl leading-tight md:leading-[2.5rem]"
             >
               "La ingeniería electrónica al servicio de la seguridad aérea"
             </motion.p>
             <div className="flex flex-col md:flex-row items-center gap-4">
               <button
-                className="w-full xl:w-auto bg-blue-700 text-white py-4 px-8 rounded-xl text-xl hover:bg-blue-800 transition-all duration-300 ease-in"
+                className="w-full xl:w-auto bg-blue-700 dark:bg-gray-900 dark:hover:bg-gray-800 text-white py-4 px-8 rounded-xl text-xl hover:bg-blue-800 transition-all duration-300 ease-in"
               >
                 <a href="#contact">Contáctanos</a>
               </button>
@@ -84,11 +84,11 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.7 }}
             >
               <div>
-                <div className="relative text-center bg-white shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-4 lg:-mt-12 lg:ml-20 transition-all duration-500 ">
-                  <h2 className="text-xl font-bold tracking-[1px] text-gray-800">
+                <div className="relative text-center bg-white dark:bg-gray-900 shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-4 lg:-mt-12 lg:ml-20 transition-all duration-500 ">
+                  <h2 className="text-xl font-bold tracking-[1px] text-gray-800 dark:text-white">
                     +50 años de experiencia
                   </h2>
-                  <div className="flex items-center text-center justify-center gap-2 text-lg text-gray-500">
+                  <div className="flex items-center text-center justify-center gap-2 text-lg text-gray-500 dark:text-gray-200">
                     <RiStarFill className="text-sky-600" />
                     <RiStarFill className="text-sky-600" />
                     <RiStarFill className="text-sky-600" />
@@ -101,7 +101,7 @@ const Hero = () => {
             </motion.div>
           </div>
           {/* Circle */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-8 w-[70vw] h-[70vw] md:w-[380px] md:h-[380px] lg:-translate-x-60 bg-white border-[10px] border-sky-600/50 rounded-full -z-10"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-8 w-[70vw] h-[70vw] md:w-[380px] md:h-[380px] lg:-translate-x-60 dark:bg-white border-[10px] border-sky-600/50 rounded-full -z-10"></div>
         </motion.div>
 
       </section>

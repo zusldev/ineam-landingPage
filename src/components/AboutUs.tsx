@@ -77,7 +77,7 @@ export default function AboutUs(): JSX.Element {
 
   return (
     <motion.section
-      className="relative bg-white overflow-hidden"
+      className="relative bg-white dark:bg-black overflow-hidden"
       id="aboutUsSection"
       variants={sectionVariants}
       initial="hidden"
@@ -89,7 +89,7 @@ export default function AboutUs(): JSX.Element {
             <h2 className="text-base text-center text-blue-600 font-semibold tracking-wide uppercase">
               Sobre nosotros
             </h2>
-            <p className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Conoce nuestra asociación
             </p>
             <motion.div
@@ -99,16 +99,16 @@ export default function AboutUs(): JSX.Element {
             >
               {items.map((item) => (
                 <motion.div
-                  className="bg-white rounded-lg overflow-hidden"
+                  className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden"
                   key={item.title}
                   variants={itemVariants}
                 >
                   <div className="px-6 py-8">
                     <div className="flex justify-center">{item.icon}</div>
-                    <h3 className="mt-4 text-2xl font-medium text-gray-900 text-center">
+                    <h3 className="mt-4 text-2xl font-medium text-gray-900 dark:text-white text-center">
                       {item.title}
                     </h3>
-                    <p className="mt-4 text-lg text-gray-500">{item.text}</p>
+                    <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">{item.text}</p>
                   </div>
                 </motion.div>
               ))}

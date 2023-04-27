@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export default function Example() {
   return (
-    <footer className="w-full bg-white p-8">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+    <footer className="w-full bg-white dark:bg-black p-8">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
         <Image
           src={logo}
           alt="INEAM"
@@ -69,7 +69,7 @@ export default function Example() {
 
         </ul>
       </div>
-      <hr className="my-8 border-blue-gray-50" />
+      <hr className="my-8 border-blue-gray-50 dark:border-gray-700" />
       <Typography color="blue-gray" className="text-center font-normal">
         &copy; 2023 INEAM - Todos los derechos reservados
         developed by{" "}
