@@ -1,11 +1,11 @@
-import {motion} from "framer-motion";
-import {FiMail, FiPhone} from "react-icons/fi";
+import { motion } from "framer-motion";
+import { FiMail, FiPhone, FiHome } from "react-icons/fi";
 
 export default function Contact(): JSX.Element {
   return (
-    <section className="bg-gray-100 py-16" id="contact">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
+    <section className="bg-white px-4 py-8 sm:px-6 lg:px-8" id="contact">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center">
           <h2 className="text-base text-center text-blue-600 font-semibold tracking-wide uppercase">
             Contáctanos
           </h2>
@@ -20,20 +20,22 @@ export default function Contact(): JSX.Element {
 
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10"
-          initial={{opacity: 0}}
-          animate={{opacity: 1}}
-          transition={{delay: 0.4, duration: 2}}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 2 }}
+
         >
           <motion.div
-            className="bg-white rounded-lg overflow-hidden"
-            initial={{y: 50, opacity: 0}}
-            animate={{y: 0, opacity: 1}}
-            transition={{delay: 0.4, duration: 1}}
+            className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="px-6 py-8">
+            <div className="px-6 py-8 bg-gray-100">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <FiMail className="h-8 w-8 text-blue-600"/>
+                  <FiMail className="h-8 w-8 text-blue-600" />
                 </div>
                 <div className="ml-4">
                   <div className="text-lg font-medium text-gray-900">
@@ -57,15 +59,16 @@ export default function Contact(): JSX.Element {
           </motion.div>
 
           <motion.div
-            className="bg-white rounded-lg overflow-hidden"
-            initial={{y: 50, opacity: 0}}
-            animate={{y: 0, opacity: 1}}
-            transition={{delay: 0.6, duration: 1}}
+            className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="px-6 py-8">
+            <div className="px-6 py-8 bg-gray-100">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <FiPhone className="h-8 w-8 text-blue-600"/>
+                  <FiPhone className="h-8 w-8 text-blue-600" />
                 </div>
                 <div className="ml-4">
                   <div className="text-lg font-medium text-gray-900">
@@ -84,6 +87,35 @@ export default function Contact(): JSX.Element {
               </div>
             </div>
           </motion.div>
+          <motion.div
+            className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
+          >
+            <div className="px-6 py-8 bg-gray-100">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <FiHome className="h-8 w-8 text-blue-600" />
+                </div>
+                <div className="ml-4">
+                  <div className="text-lg font-medium text-gray-900">
+                    Visítanos
+                  </div>
+                  <p className="mt-1 text-gray-500">
+                    Ven a nuestras oficinas y conoce más sobre como podemos colaborar juntos.
+                  </p>
+                  <div className="mt-4">
+                    <a href="https://goo.gl/maps/9Y1qXJQzYQJ2" target="_blank" className="text-blue-600 hover:text-blue-500">
+                      Av. Siempre Viva 742, Springfield
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
         </motion.div>
       </div>
     </section>
