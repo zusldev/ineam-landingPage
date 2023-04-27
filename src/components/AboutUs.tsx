@@ -90,7 +90,7 @@ export default function AboutUs(): JSX.Element {
               Sobre nosotros
             </h2>
             <p className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              ¿Quiénes somos?
+              Conoce nuestra asociación
             </p>
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 overflow-hidden"
