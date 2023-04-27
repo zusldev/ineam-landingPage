@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
       <div className="xl:w-1/6 text-center -mt-4">
-        <a href="#" className="text-2xl bg-white font-bold relative p-1 ">
+        <a href="#" className="text-2xl  bg-white font-bold relative p-1 ">
           INEAM
           <span className="text-blue-800 text-5xl">.</span>
         </a>
