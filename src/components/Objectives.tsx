@@ -101,5 +101,3 @@ const Objectives = () => {
 };
 
 export default Objectives;
-
-
