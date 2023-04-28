@@ -3,7 +3,7 @@ import logo from "../assets/images/ineamLogo.png";
 import Image from 'next/image';
 
 
-export default function Example() {
+function Footer() {
   return (
     <footer className="w-full bg-white dark:bg-black p-8">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
@@ -88,3 +88,5 @@ export default function Example() {
     </footer>
   );
 }
+
+export default Footer;

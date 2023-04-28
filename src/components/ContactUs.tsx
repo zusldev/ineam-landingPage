@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FiMail, FiPhone, FiHome } from "react-icons/fi";
 
-export default function Contact(): JSX.Element {
+function Contact(): JSX.Element {
   return (
     <section className="bg-white px-4 py-8 dark:bg-black sm:px-6 lg:px-8" id="contact">
       <div className="max-w-7xl mx-auto">
@@ -121,3 +121,5 @@ export default function Contact(): JSX.Element {
     </section>
   );
 }
+
+export default Contact;

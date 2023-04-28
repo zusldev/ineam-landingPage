@@ -4,7 +4,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: white;
 }
 
 html {
@@ -17,7 +16,6 @@ html {
   }
   body {
     color: white;
-    
   }
 }
 
