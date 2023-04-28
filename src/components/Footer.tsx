@@ -15,7 +15,7 @@ function Footer() {
           className='w-24 h-24'
         />
 
-        <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <ul className="flex text-black dark:text-gray-500 flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
               as="a"
@@ -70,7 +70,7 @@ function Footer() {
         </ul>
       </div>
       <hr className="my-8 border-blue-gray-50 dark:border-gray-700" />
-      <Typography color="blue-gray" className="text-center font-normal">
+      <Typography color="blue-gray" className="text-center font-normal text-black dark:text-gray-500">
         &copy; 2023 INEAM - Todos los derechos reservados
         developed by{" "}
         <a
