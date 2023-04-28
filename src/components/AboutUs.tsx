@@ -29,7 +29,7 @@ const items = [
     alt: "About us 3"
   }
 ];
-export default function AboutUs(): JSX.Element {
+function AboutUs(): JSX.Element {
   const [show, setShow] = useState(false);
 
   const onScroll = () => {
@@ -119,3 +119,5 @@ export default function AboutUs(): JSX.Element {
     </motion.section>
   );
 }
+
+export default AboutUs;

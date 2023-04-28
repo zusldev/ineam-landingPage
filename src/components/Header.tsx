@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between bg-white text-black dark:text-white dark:bg-black xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
       <div className="xl:w-1/6 text-center -mt-4">
-        <a href="#" className="text-2xl font-bold relative p-1 ">
+        <a href="#" className="text-2xl font-bold relative p-1">
           INEAM
           <span className="text-blue-800 text-5xl">.</span>
         </a>
@@ -52,6 +52,12 @@ const Header = () => {
         className={`fixed w-[80%] md:w-[40%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"
           } top-0 xl:static flex-1 flex flex-col bg-white dark:bg-black xl:flex-row items-center justify-center gap-10 transition- duration-200 z-50`}
       >
+        <div className="xl:w-1/6 lg:hidden text-center -mt-4">
+          <a href="#" className="text-2xl font-bold relative p-1 ">
+            INEAM
+            <span className="text-blue-800 text-5xl">.</span>
+          </a>
+        </div>
 
         <a href="#home" className="hover:bg-gray-100 p-2 rounded-md dark:hover:bg-gray-800">
           Inicio

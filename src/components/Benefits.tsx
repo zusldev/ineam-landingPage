@@ -1,24 +1,24 @@
-import {motion} from "framer-motion";
-import {FaStar} from "react-icons/fa";
+import { motion } from "framer-motion";
+import { FaStar } from "react-icons/fa";
 
 const benefits = [
   {
     title: "Red de profesionales",
     text:
       "Únete a una comunidad de profesionales altamente capacitados que comparten conocimientos y experiencia.",
-    icon: <FaStar className="h-8 w-8 text-blue-600"/>,
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
   },
   {
     title: "Colaboración en proyectos innovadores",
     text:
       "Participa en proyectos de alta tecnología y colabora con otros profesionales en la creación de soluciones innovadoras.",
-    icon: <FaStar className="h-8 w-8 text-blue-600"/>,
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
   },
   {
     title: "Desarrollo profesional",
     text:
       "Aprovecha oportunidades de capacitación y desarrollo profesional para impulsar tu carrera en la industria de la electrónica y la automatización.",
-    icon: <FaStar className="h-8 w-8 text-blue-600"/>,
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
   },
 ];
 
@@ -35,15 +35,15 @@ const Benefits = () => {
           </p>
           <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10"
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{delay: 0.4, duration: 1.5}}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 1.5 }}
           >
             {benefits.map((benefit) => (
               <motion.div
                 className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg"
                 key={benefit.title}
-                whileHover={{scale: 1.05}}
+                whileHover={{ scale: 1.05 }}
               >
                 <div className="px-4 py-8 sm:px-6 lg:px-8">
                   <div className="flex justify-center mb-4">{benefit.icon}</div>

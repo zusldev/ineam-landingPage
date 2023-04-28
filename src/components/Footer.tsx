@@ -3,7 +3,7 @@ import logo from "../assets/images/ineamLogo.png";
 import Image from 'next/image';
 
 
-export default function Example() {
+function Footer() {
   return (
     <footer className="w-full bg-white dark:bg-black p-8">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
@@ -15,7 +15,7 @@ export default function Example() {
           className='w-24 h-24'
         />
 
-        <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <ul className="flex text-black dark:text-gray-500 flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
               as="a"
@@ -70,7 +70,7 @@ export default function Example() {
         </ul>
       </div>
       <hr className="my-8 border-blue-gray-50 dark:border-gray-700" />
-      <Typography color="blue-gray" className="text-center font-normal">
+      <Typography color="blue-gray" className="text-center font-normal text-black dark:text-gray-500">
         &copy; 2023 INEAM - Todos los derechos reservados
         developed by{" "}
         <a
@@ -88,3 +88,5 @@ export default function Example() {
     </footer>
   );
 }
+
+export default Footer;
