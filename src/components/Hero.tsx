@@ -15,7 +15,7 @@ const Hero = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <main className="flex justify-center dark:bg-black items-center  mx-auto">
+    <main className="flex justify-center bg-gradient-to-b from-transparent to-[#1c92d2] dark:bg-black items-center mx-auto">
       <section
         id="home"
         className="grid grid-cols-1 md:grid-cols-2 place-items-center max-w-7xl gap-10 md:gap-72 mx-auto py-16 md:py-32"
@@ -85,7 +85,7 @@ const Hero = () => {
             >
               {/* minicard */}
               <div>
-                <div className="relative text-center bg-white dark:bg-gray-900 shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-4 lg:-mt-12 lg:ml-20 transition-all duration-200 ">
+                <div className="relative text-center bg-white/50 dark:bg-gray-900 shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-4 lg:-mt-12 lg:ml-20 transition-all duration-200 ">
                   <h2 className="text-xl font-bold tracking-[1px] text-gray-800 dark:text-white">
                     +50 años de experiencia
                   </h2>
