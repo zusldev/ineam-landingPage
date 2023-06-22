@@ -42,15 +42,15 @@ function Contact(): JSX.Element {
                     Envíanos un correo electrónico
                   </div>
                   <p className="mt-1 text-gray-500 dark:text-gray-300">
-                    ¿Tienes alguna duda? Escríbenos a nuestro correo
+                    ¿Quieres comunicarte con nosotros? 
+                    Escríbenos a nuestro correo
                     electrónico y te responderemos lo antes posible.
                   </p>
                   <div className="mt-4">
                     <a
-                      href="mailto:info@miempresa.com"
-                      className="text-blue-600 hover:text-blue-500"
-                    >
-                      info@miempresa.com
+                      href="mailto:ineam.mex@gmail.com"
+                      className="text-blue-600 hover:text-blue-500" >
+                      ineam.mex@gmail.com
                     </a>
                   </div>
                 </div>

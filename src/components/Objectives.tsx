@@ -1,4 +1,4 @@
-import { FaBook, FaHandsHelping, FaLightbulb, FaRegHandshake, FaRocket, FaUsers } from 'react-icons/fa';
+import { FaBlackTie, FaBook, FaBrain, FaHandsHelping, FaLevelUpAlt, FaLightbulb, FaMendeley, FaRegHandshake, FaRocket, FaUsers, FaWeightHanging } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
@@ -32,7 +32,23 @@ const objectivesData = [
     icon: <FaHandsHelping className="text-4xl mb-4 text-blue-600" />,
     title: 'Promover la responsabilidad social y el compromiso con el medio ambiente.',
     text: 'Nos preocupamos por el bienestar de la sociedad y el medio ambiente, por lo que buscamos desarrollar proyectos que contribuyan a la mejora de la calidad de vida de las personas y al cuidado del medio ambiente.'
+  },
+  {
+    icon: <FaBlackTie className="text-4xl mb-4 text-blue-600" />,
+    title: 'Formar una bolsa de trabajo del sector aeronáutico.',
+    text: 'Nuestro objetivo es promover oportunidades laborales y contribuir al crecimiento y desarrollo de la industria aeronáutica, brindando un espacio donde profesionales talentosos puedan encontrar empleo y empresas puedan acceder a los mejores talentos en el campo.'
+  },
+  {
+    icon: <FaBrain className="text-4xl mb-4 text-blue-600" />,
+    title: 'Promover el intercambio con instituciones nacionales o extranjeras.',
+    text: 'Trabajamos arduamente para elevar el prestigio de nuestra especialidad en electrónica aeronáutica. A través de la excelencia en nuestros servicios, el fomento de la innovación y el intercambio de conocimientos, buscamos posicionar nuestra especialidad como referente de calidad y profesionalismo en la industria aeronáutica.'
+  },
+  {
+    icon: <FaLevelUpAlt className="text-4xl mb-4 text-blue-600" />,
+    title: 'Elevar el prestigio de la especialidad.',
+    text: 'Buscamos establecer alianzas estratégicas con instituciones nacionales e internacionales para fomentar el intercambio de conocimientos, experiencias y oportunidades. Con objetivo de fortalecer la asociación promoviendo la sinergia y el crecimiento mutuo.'
   }
+  
 ];
 const Objectives = () => {
   const [show, setShow] = useState(false);

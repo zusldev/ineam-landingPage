@@ -46,7 +46,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-gray-500 dark:text-gray-300 text-2xl leading-tight md:leading-[2.5rem]"
+              className="text-gray-200 dark:text-gray-300 text-2xl leading-tight md:leading-[2.5rem]"
             >
               "La ingeniería electrónica al servicio de la seguridad aérea"
             </motion.p>
@@ -87,14 +87,14 @@ const Hero = () => {
               <div>
                 <div className="relative text-center bg-white/50 dark:bg-gray-900 shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-4 lg:-mt-12 lg:ml-20 transition-all duration-200 ">
                   <h2 className="text-xl font-bold tracking-[1px] text-gray-800 dark:text-white">
-                    +50 años de experiencia
+                    +20 años de experiencia
                   </h2>
                   <div className="flex items-center text-center justify-center gap-2 text-lg text-gray-500">
-                    <RiStarFill className="text-sky-600" />
-                    <RiStarFill className="text-sky-600" />
-                    <RiStarFill className="text-sky-600" />
-                    <RiStarFill className="text-sky-600" />
-                    <RiStarFill className="text-sky-600" />
+                    <RiStarFill className="text-yellow-600" />
+                    <RiStarFill className="text-yellow-600" />
+                    <RiStarFill className="text-yellow-600" />
+                    <RiStarFill className="text-yellow-600" />
+                    <RiStarFill className="text-yellow-600" />
                   </div>
                 </div>
               </div>

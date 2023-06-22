@@ -7,15 +7,21 @@ const items = [
   {
     title: "¿Quiénes somos?",
     text:
-      "Somos una asociación de profesionales que busca impulsar el desarrollo de la industria de la electrónica y la automatización en México, a través de la colaboración entre profesionales, empresas y universidades.",
+         "Somos una asociación de profesionales especializados en electrónica aplicada a la aeronáutica." +
+         "Trabajamos en estrecha colaboración con el sector aéreo para brindar servicios de navegación en el espacio aéreo mexicano. "+
+         "Nuestro enfoque principal es promover el crecimiento y la superación personal y profesional, fomentando la ayuda mutua y el intercambio de conocimientos, ideas y experiencias."+
+         "Además, impulsamos el desarrollo de la industria de la electrónica y la automatización en México a través de alianzas estratégicas con profesionales, empresas y universidades."
+    ,
     icon: <AiOutlineTeam className="h-8 w-8 text-blue-600" />,
     image: "/about-us-1.jpg",
     alt: "About us 1"
+
   },
   {
     title: "¿Qué hacemos?",
     text:
-      "Nuestro objetivo es crear una red de profesionales altamente capacitados, que puedan colaborar en proyectos innovadores y de alta tecnología, y que puedan participar en la toma de decisiones estratégicas de la industria.",
+      "Nuestra asociación se compone de ingenieros en electrónica aeronáutica altamente capacitados y apasionados. Nos destacamos por nuestra experiencia en la aplicación de la electrónica en el campo de la aeronáutica.  Trabajamos en estrecha colaboración con el sector aéreo mexicano, brindando servicios especializados en navegación y garantizando un funcionamiento eficiente y seguro en el espacio aéreo."
+    ,
     icon: <AiOutlineBulb className="h-8 w-8 text-blue-600" />,
     image: "/about-us-2.jpg",
     alt: "About us 2"
@@ -23,11 +29,22 @@ const items = [
   {
     title: "¿Cómo lo hacemos?",
     text:
-      "Nuestra asociación está conformada por profesionales de la industria, académicos y estudiantes de licenciatura y posgrado, que buscan impulsar su carrera profesional y contribuir al desarrollo de la industria.",
+      "Como asociación, unimos a profesionales de la industria, académicos y estudiantes de licenciatura y posgrado con el objetivo de impulsar su carrera profesional y contribuir al desarrollo de la industria. Promovemos el crecimiento personal y profesional a través del intercambio de conocimientos, ideas y experiencias. Nos enfocamos en la excelencia y la innovación, estableciendo alianzas estratégicas con profesionales,  empresas y universidades para impulsar el avance tecnológico en electrónica y automatización en México."
+    ,
     icon: <AiOutlineFundProjectionScreen className="h-8 w-8 text-blue-600" />,
     image: "/about-us-3.jpg",
     alt: "About us 3"
-  }
+  },
+  {
+    title: "¿A donde vamos?",
+    text:
+      "Hacia dónde vamos: En nuestra asociación, nos esforzamos constantemente por alcanzar nuevos horizontes en el campo de la electrónica aplicada a la aeronáutica. Buscamos seguir impulsando el desarrollo de la industria en México, promoviendo la innovación y la excelencia en cada proyecto en el que nos involucramos. Nuestro objetivo es fortalecer aún más nuestras alianzas estratégicas con profesionales, empresas y universidades, para estar a la vanguardia de las últimas tecnologías y tendencias. A través de la formación continua, el intercambio de conocimientos y la participación activa en la toma de decisiones estratégicas, nos posicionamos como líderes en el avance tecnológico y la transformación de la industria aeroespacial en México y más allá."
+    ,
+    icon: <AiOutlineFundProjectionScreen className="h-8 w-8 text-blue-600" />,
+    image: "/about-us-3.jpg",
+    alt: "About us 3"
+  },
+
 ];
 function AboutUs(): JSX.Element {
   const [show, setShow] = useState(false);
@@ -83,9 +100,9 @@ function AboutUs(): JSX.Element {
       initial="hidden"
       animate={show ? "visible" : "hidden"}
     >
-      <section className="py-12" id="aboutUs">
+      <section className="py-12  fondo" id="aboutUs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:text-center">
+          <div className="lg:text-justify">
             <h2 className="text-base text-center text-blue-600 font-semibold tracking-wide uppercase">
               Sobre nosotros
             </h2>

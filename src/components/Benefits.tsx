@@ -11,13 +11,49 @@ const benefits = [
   {
     title: "Colaboración en proyectos innovadores",
     text:
-      "Participa en proyectos de alta tecnología y colabora con otros profesionales en la creación de soluciones innovadoras.",
+      "Participa en proyectos de alta tecnología  con la oportunidad de recibir el acceso a financiamiento y respaldo institucional de CONACYT y los fondos sectoriales (ASA-CONACYT).",
     icon: <FaStar className="h-8 w-8 text-blue-600" />,
   },
   {
-    title: "Desarrollo profesional",
+    title: "Espacio de Superación Personal y Profesional",
     text:
-      "Aprovecha oportunidades de capacitación y desarrollo profesional para impulsar tu carrera en la industria de la electrónica y la automatización.",
+      "Ofrecemos un espacio propicio para la superación personal y profesional a través de capacitaciones, cursos, seminarios y talleres tanto internos como en colaboración con instituciones del sector aéreo.",
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
+  },
+  {
+    title: "ATM tecnologías y vanguardistas",
+    text:
+      "Sumérgete en el fascinante mundo del ATM (Air Traffic Management) y explora tecnologías vanguardistas. Amplía tu conocimiento y descubre las últimas innovaciones en el control del tráfico aéreo a nivel internacional.",
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
+  },
+  {
+    title: "Tallers, Ferias y Foros",
+    text:
+      "Participa en foros y ferias nacionales e internacionales de aviación. Conéctate con expertos, descubre tendencias y establece contactos clave en la industria. Amplía tu red profesional y mantente actualizado en el mundo de la aviación.",
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
+  },
+  {
+    title: "Fondo de Ahorro",
+    text:
+      "Apoyo moral y material a través de un Fondo de Seguridad Social creado para fomentar el ahorro y apoyo mutuos.",
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
+  },
+  {
+    title: "Participación Activa: Asambleas Nacionales",
+    text:
+      "Aporta ideas, proyectos y resoluciones para impulsar los objetivos de la asociación. Participa activamente en las asambleas nacionales, donde podrás influir en la toma de decisiones y contribuir al crecimiento y desarrollo de la organización.",
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
+  },
+  {
+    title: "Vínculos Fuertes",
+    text:
+      "Establece y fortalece los lazos de amistad y ayuda mutua entre los asociados a través de diversas actividades de índole social y cultural. Disfruta de momentos de convivencia, crea conexiones significativas y enriquece tu experiencia como parte de nuestra asociación.",
+    icon: <FaStar className="h-8 w-8 text-blue-600" />,
+  },
+  {
+    title: "Recursos Exclusivos y Actualizados",
+    text:
+      "Como miembro de nuestra asociación, tendrás acceso a una amplia gama de recursos exclusivos y actualizados. Esto incluye materiales educativos, informes técnicos, publicaciones especializadas y eventos temáticos.",
     icon: <FaStar className="h-8 w-8 text-blue-600" />,
   },
 ];

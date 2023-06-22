@@ -8,21 +8,21 @@ export default function MissionVisionValues(): JSX.Element {
       title: "Misión",
       icon: <FaGlobe className="h-12 w-12 text-blue-600" />,
       text:
-        "Nuestra misión es impulsar el desarrollo de la industria de la electrónica y la automatización en México, a través de la colaboración entre profesionales, empresas y universidades.",
+        "Promovemos el crecimiento y desarrollo profesional de nuestros miembros, impulsando la industria de la electrónica y la automatización en México a través de servicios especializados y alianzas estratégicas.",
       animation: { x: 0, opacity: 1 },
     },
     {
       title: "Visión",
       icon: <FaEye className="h-12 w-12 text-blue-600" />,
       text:
-        "Ser la asociación de referencia en México para el desarrollo y la promoción de la industria de la electrónica y la automatización.",
+        "Ser reconocidos como líderes en la electrónica aplicada a la aeronáutica en México, impulsando la innovación y siendo referentes en el avance tecnológico.",
       animation: { x: 0, opacity: 1 },
     },
     {
       title: "Valores",
       icon: <FaHeart className="h-12 w-12 text-blue-600" />,
       text:
-        "Nos guiamos por los valores de colaboración, innovación, ética y responsabilidad social en todas nuestras actividades.",
+        "Nos guiamos por los valores de Excelencia, colaboración, innovación, ética, aprendizaje y responsabilidad social en todas nuestras actividades.",
       animation: { x: 0, opacity: 1 },
     },
   ];
